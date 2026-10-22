@@ -1,7 +1,7 @@
 
 
 const API_URL = 'https://retoolapi.dev/wJnCjD/data';
-const data = [];
+let data = [];
 async function init(){
     const response = await fetch(API_URL);
     data = await response.json();
