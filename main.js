@@ -1,8 +1,10 @@
-const API_URL = 'https://retoolapi.dev/wJnCjD/data';
 
+
+const API_URL = 'https://retoolapi.dev/wJnCjD/data';
+const data = [];
 async function init(){
     const response = await fetch(API_URL);
-    const data = await response.json();
+    data = await response.json();
 
     const tableBody = document.getElementById('tablazat');
     for (const item of data) {
